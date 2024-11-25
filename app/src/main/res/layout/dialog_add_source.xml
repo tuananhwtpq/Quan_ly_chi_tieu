@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edtSourceName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tên nguồn tiền"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edtAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Số tiền"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtSourceName" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edtFromWhere"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nguồn tiền từ đâu"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtAmount" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="16dp"
+        tools:ignore="MissingConstraints">
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm"
+        app:icon="@drawable/ic_add"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="169dp"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hủy"
+        tools:layout_editor_absoluteX="262dp"
+        tools:layout_editor_absoluteY="172dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
